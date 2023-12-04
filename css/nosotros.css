@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+:root {
+  --greenNature: #82be42;
+  --greenNatureMedium: #4c7a1b;
+  --grayBlack: #111113;
+}
+
+body {
+  margin: 0;
+}
+
+.container__hero {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.container__logo {
+  height: 100%;
+}
+
+.container__logo img {
+  height: 70px;
+  margin-top: 12px;
+}
+
+/******* NAVIGATION *******/
+.nav-bar {
+  background-color: var(--greenNature);
+  padding: 20px;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 80px;
+}
+
+.menu,
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.menu {
+  background-color: var(--greenNature);
+  width: 350px;
+  margin-left: -100%;
+  transition: all 0.5s;
+  position: fixed;
+  margin-top: 148px;
+}
+
+.menu__link {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  background-color: var(--greenNatureMedium);
+}
+
+.submenu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.submenu .menu__link {
+  background-color: var(--greenNature);
+  padding-left: 50px;
+}
+
+.submenu .menu__link:hover {
+  background-color: var(--greenNatureMedium);
+}
+
+#select {
+  background-color: var(--greenNatureMedium);
+}
+
+.mostrar {
+  margin-left: 0;
+}
+
+/***** COMUNICACIONES ******/
+.comunicaciones {
+  position: fixed;
+  top: 450px;
+  z-index: 2;
+  right: 10px;
+}
+
+#whatsapp a {
+  background-color: #42e35f;
+  padding: 10px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+  transition: 0.3s;
+  border-radius: 10%;
+}
+
+#whatsapp a:hover {
+  color: #42e35f;
+  background-color: #fff;
+}
+
+/******* ABOUT2 *******/
+.about2 {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  place-items: center;
+  height: 500px;
+  padding-top: 200px;
+}
+
+.about__picture2 {
+  margin-right: 10px;
+}
+
+.about__img2 {
+  width: 95%;
+  opacity: 0;
+  animation: opacity infinite 3s ease-in-out;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+.about__text {
+  width: 100%;
+  height: 120%;
+  background-color: var(--greenNature);
+}
+
+.title--fibra {
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.about__parargraph2 {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-weight: 300;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+/******* FOOTER *******/
+.container__footer {
+  position: relative;
+  background-color: var(--grayBlack);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+}
+
+.container__logoFooter {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.container__logoFooter img {
+  width: 250px;
+}
+
+/*COPY RIGHT DEL FOOTER*/
+.copy__footer {
+  background-color: var(--greenNature);
+  margin-top: 50px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copy__footer P {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  color: #172b02;
+  letter-spacing: 1px;
+}
+
+/******* MEDIA QUERIES *******/
+@media screen and (min-width: 1024px) {
+  .container__hero {
+    position: fixed;
+  }
+
+  .container__logo {
+    height: 100%;
+    margin-right: 900px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    position: fixed;
+    margin-top: 80px;
+  }
+
+  .container-submenu {
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    margin-top: 0px;
+    width: 200px;
+    overflow: visible;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .container-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /******* ABOUT2 *******/
+  .about2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__img2 {
+    width: 500px;
+  }
+
+  /******* CARRUSEL DE IMAGENES *******/
+  .carrusel {
+    margin-top: 160px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /******* ABOUT2 *******/ 
+  .about2 {
+    grid-template-columns: 1fr;
+  }
+
+  .about__picture2 {
+    margin-right: 10px;
+    height: 200px;
+  }
+
+  .about__img2 {
+    width: 400px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+
+  .about__text {
+    width: 100%;
+    height: 120%;
+    background-color: var(--greenNature);
+  }
+
+  .title--fibra {
+    font-family: "Kanit", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .about__parargraph2 {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: 300;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+  }
+
+  /******* FOOTER *******/
+  footer {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /******* CARRUSEL DE IMAGENES *******/
+  .carrusel {
+    margin-top: 200px;
+  }
+
+  .carrusel a {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /******* ABOUT2 *******/
+
+  .title--fibra {
+    font-size: 2rem;
+  }
+
+  .about__parargraph2 {
+    font-size: 1rem;
+  }
+  .about__img2 {
+    width: 300px;
+    margin-right: 50px;
+  }
+
+}

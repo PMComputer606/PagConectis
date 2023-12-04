@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Internet dedicado, fibra optica, velicidad">
+    <meta name="description" content="Somos una empresa dedicada al servicio de internet">
+    <title>Conectis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--------------HEADER-------------->
+    <header class="header__container">
+      <!--------------REDES SOCIALES-------------->
+      <div class="comunicaciones">
+        <div id="whatsapp">
+          <a href="https://wa.me/5493517321222" class="fab fa-whatsapp"></a>
+        </div>
+      </div>
+
+      <!-------------CONTAINER HERO------------>
+      <div class="container__hero">
+        <div class="container hero">
+          <div class="container__logo">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-------------NAVIGATION------------>
+      <div class="container__nav">
+        <span class="nav-bar" id="btnMenu"><i class="fa fa-bars"></i></span>
+        <ul class="menu" id="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link" id="select">Inicio</a>
+          </li>
+          <li class="menu__item">
+            <a href="nosotros.html" class="menu__link">Acerca de</a>
+          </li>
+          <li class="menu__item container-submenu">
+            <a href="#" class="menu__link submenu-btn"
+              >Servicios <i class="fas fa-chevron-down"></i
+            ></a>
+            <ul class="submenu">
+              <li class="item">
+                <a href="index.html" class="menu__link">Internet</a>
+              </li>
+              <li class="item">
+                <a href="http://www.electrolive.com.ar" class="menu__link">Electrolive</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="contacto.html" class="menu__link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <!-------------------SLIDER------------------->
+    <section class="contenedor__slider">
+      <div class="slide-contenedor">
+          <div class="miSlider fade">
+              <img src="./assets/images/01.jpg" alt="">
+          </div>
+          <div class="miSlider fade">
+              <img src="./assets/images/02.jpg" alt="">
+          </div>
+          <div class="miSlider fade">
+              <img src="./assets/images/03.jpg" alt="">
+          </div>
+
+          <div class="miSlider fade">
+            <img src="./assets/images/04.jpg" alt="">
+        </div>
+
+          <div class="direcciones">
+              <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+              <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+          </div>
+          <div class="barras">
+              <span class="barra active" onclick="posicionSlide(1)"></span>
+              <span class="barra" onclick="posicionSlide(2)"></span>
+              <span class="barra" onclick="posicionSlide(3)"></span>
+              <span class="barra" onclick="posicionSlide(4)"></span>
+
+          </div>
+      </div>
+    </section>
+
+   <!-----------------COVER-----------------> 
+  <section class="cover">
+    <div class="cover__container container">
+      <div class="cover__texts">
+        <h2 class="subtitle">Internet por aire</h2>
+        <p class="cover__paragraph">
+          Conectis es una empresa que ofrece servicios de internet por aire mediante antenas y routers. Conectis se enfoca en proporcionar una conexión de internet rápida y confiable a sus clientes. La empresa utiliza tecnología de punta para garantizar que sus clientes tengan acceso a internet de alta velocidad en todo momento. Además, Conectis se enorgullece de ofrecer un servicio al cliente excepcional, asegurándose de que sus clientes estén satisfechos con su experiencia.
+        </p>
+      </div>
+
+      <figure class="cover__picture">
+        <img src="./assets/images/antena.jpg" alt="" class="cover__img">
+      </figure>
+    </div>
+  </section>
+  
+
+     <!-----------------COVER2----------------->
+     
+     <section class="cover2">
+      <div class="cover2__container container">
+        <div class="cover2__texts">
+          <h2 class="subtitle">Internet por fibra óptica</h2>
+          <p class="cover2__paragraph">
+            La tecnología de banda ancha fija por fibra óptica es la más avanzada para transmitir gran cantidad de datos a una velocidad superior y en forma simétrica (misma velocidad de subida que de bajada). Podés disfrutar de un servicio de internet WiFi de alta calidad en tu hogar, más estable, con un amplio ancho de banda que brinda mayor velocidad y estabilidad en la conexión, y mínima incidencia de microcortes. La instalación la realizan técnicos especializados con la mejor tecnología.
+          </p>
+        </div>
+  
+        <figure class="cover2__picture">
+          <img src="./assets/images/fibra2.jpg" alt="" class="cover__img2">
+        </figure>
+      </div>
+    </section>
+    
+      <!-----------------COVER3----------------->
+      <section class="cover">
+        <div class="cover__container container">
+          <div class="cover__texts">
+            <h2 class="subtitle">Internet para empresa</h2>
+            <p class="cover__paragraph">
+              Este servicio es de internet dedicado, cuenta con una conexión
+            exclusiva y permanente, este tipo de conexión puedes compartir
+            grandes archivos y recursos de manera remota y segura, con la
+            posibilidad de escalar el servicio de acuerdo a cada necesidad.
+            </p>
+          </div>
+    
+          <figure class="cover__picture">
+            <img src="./assets/images/company.jpg" alt="" class="hero__img">
+          </figure>
+        </div>
+      </section>
+
+    <!-----------------BANNER----------------->
+    <section class="container__banner">
+      <div class="banner">
+      <img src="./assets/images/banner.jpg" alt="" class="images">
+      <div class="overlay">
+        <h2 class="title__banner">Ven y conectate con nosotros.</h2>
+      </div>
+    </div>
+    </section>
+
+    <!-----------------CARRUSEL DE IMAGEN----------------->
+    <div class="carrusel">
+      <a href="">Pagar</a>
+      <div class="carrusel__items">
+        <div class="carrusel-item">
+          <img src="assets//images/macro.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="assets/images/mercadopago.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="assets/images/nacion.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="assets/images/Naranja.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="assets/images/santander.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="assets/images/uala.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="assets/images/Brubank.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="assets/images/bancor.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-----------------FOOTER----------------->
+    <footer>
+      <section class="container container__footer">
+        <div class="container__logoFooter">
+          <img src="assets/images/logo.png" alt="" class="img" />
+        </div>
+      </section>
+      <section class="copy__footer">
+        <div class="copyright__footer">
+          <p>&copy; copyright 2023 Conectis</p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/carrusel.js"></script>
+  </body>
+</html>
